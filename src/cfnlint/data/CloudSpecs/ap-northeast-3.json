@@ -5514,7 +5514,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest.html#cfn-ec2-ec2fleet-capacityreservationoptionsrequest-usagestrategy",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Immutable"
+          "UpdateType": "Immutable",
+          "Value": {
+            "ValueType": "AWS::EC2::EC2Fleet.CapacityReservationOptionsRequest.UsageStrategy"
+          }
         }
       }
     },
@@ -5599,7 +5602,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest-launchtemplatename",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Immutable"
+          "UpdateType": "Immutable",
+          "Value": {
+            "ValueType": "AWS::EC2::EC2Fleet.FleetLaunchTemplateSpecificationRequest.LaunchTemplateName"
+          }
         },
         "Version": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest-version",
@@ -5715,7 +5721,7 @@
           "Required": false,
           "UpdateType": "Immutable",
           "Value": {
-            "ValueType": "Ec2FleetSpotAllocationStrategy"
+            "ValueType": "AWS::EC2::EC2Fleet.SpotOptionsRequest.AllocationStrategy"
           }
         },
         "InstanceInterruptionBehavior": {
@@ -5724,7 +5730,7 @@
           "Required": false,
           "UpdateType": "Immutable",
           "Value": {
-            "ValueType": "Ec2FleetSpotInterruptionBehavior"
+            "ValueType": "AWS::EC2::EC2Fleet.SpotOptionsRequest.InstanceInterruptionBehavior"
           }
         },
         "InstancePoolsToUseCount": {
@@ -5766,7 +5772,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-resourcetype",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Immutable"
+          "UpdateType": "Immutable",
+          "Value": {
+            "ValueType": "AWS::EC2::EC2Fleet.TagSpecification.ResourceType"
+          }
         },
         "Tags": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-tags",
@@ -5786,7 +5795,7 @@
           "Required": false,
           "UpdateType": "Mutable",
           "Value": {
-            "ValueType": "Ec2FleetDefaultTargetCapacityType"
+            "ValueType": "AWS::EC2::EC2Fleet.TargetCapacitySpecificationRequest.DefaultTargetCapacityType"
           }
         },
         "OnDemandTargetCapacity": {
@@ -7207,7 +7216,7 @@
           "Required": false,
           "UpdateType": "Mutable",
           "Value": {
-            "ValueType": "EbsVolumeType"
+            "ValueType": "AWS::EC2::SpotFleet.EbsBlockDevice.VolumeType"
           }
         }
       }
@@ -7225,7 +7234,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-launchtemplatename",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::EC2::SpotFleet.FleetLaunchTemplateSpecification.LaunchTemplateName"
+          }
         },
         "Version": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-version",
@@ -7452,7 +7464,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotcapacityrebalance.html#cfn-ec2-spotfleet-spotcapacityrebalance-replacementstrategy",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::EC2::SpotFleet.SpotCapacityRebalance.ReplacementStrategy"
+          }
         }
       }
     },
@@ -7594,7 +7609,7 @@
           "Required": false,
           "UpdateType": "Immutable",
           "Value": {
-            "ValueType": "Ec2FleetSpotAllocationStrategy"
+            "ValueType": "AWS::EC2::SpotFleet.SpotFleetRequestConfigData.AllocationStrategy"
           }
         },
         "ExcessCapacityTerminationPolicy": {
@@ -7603,7 +7618,7 @@
           "Required": false,
           "UpdateType": "Mutable",
           "Value": {
-            "ValueType": "SpotFleetExcessCapacityTerminationPolicy"
+            "ValueType": "AWS::EC2::SpotFleet.SpotFleetRequestConfigData.ExcessCapacityTerminationPolicy"
           }
         },
         "IamFleetRole": {
@@ -7621,7 +7636,7 @@
           "Required": false,
           "UpdateType": "Immutable",
           "Value": {
-            "ValueType": "SpotFleetInstanceInterruptionBehavior"
+            "ValueType": "AWS::EC2::SpotFleet.SpotFleetRequestConfigData.InstanceInterruptionBehavior"
           }
         },
         "InstancePoolsToUseCount": {
@@ -7712,7 +7727,7 @@
           "Required": false,
           "UpdateType": "Immutable",
           "Value": {
-            "ValueType": "SpotFleetType"
+            "ValueType": "AWS::EC2::SpotFleet.SpotFleetRequestConfigData.Type"
           }
         },
         "ValidFrom": {
@@ -7736,7 +7751,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-tagspecifications.html#cfn-ec2-spotfleet-spotfleettagspecification-resourcetype",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::EC2::SpotFleet.SpotFleetTagSpecification.ResourceType"
+          }
         },
         "Tags": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-tagspecifications.html#cfn-ec2-spotfleet-tags",
@@ -7781,7 +7799,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html#cfn-ec2-spotfleet-spotplacement-tenancy",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::EC2::SpotFleet.SpotPlacement.Tenancy"
+          }
         }
       }
     },
@@ -20461,6 +20482,286 @@
         }
       }
     },
+    "AWS::WAFRegional::ByteMatchSet.ByteMatchTuple": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html",
+      "Properties": {
+        "FieldToMatch": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-fieldtomatch",
+          "Required": true,
+          "Type": "FieldToMatch",
+          "UpdateType": "Mutable"
+        },
+        "PositionalConstraint": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-positionalconstraint",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        },
+        "TargetString": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-targetstring",
+          "PrimitiveType": "String",
+          "Required": false,
+          "UpdateType": "Mutable"
+        },
+        "TargetStringBase64": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-targetstringbase64",
+          "PrimitiveType": "String",
+          "Required": false,
+          "UpdateType": "Mutable"
+        },
+        "TextTransformation": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-texttransformation",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::ByteMatchSet.FieldToMatch": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-fieldtomatch.html",
+      "Properties": {
+        "Data": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-fieldtomatch.html#cfn-wafregional-bytematchset-fieldtomatch-data",
+          "PrimitiveType": "String",
+          "Required": false,
+          "UpdateType": "Mutable"
+        },
+        "Type": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-fieldtomatch.html#cfn-wafregional-bytematchset-fieldtomatch-type",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::GeoMatchSet.GeoMatchConstraint": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-geomatchset-geomatchconstraint.html",
+      "Properties": {
+        "Type": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-geomatchset-geomatchconstraint.html#cfn-wafregional-geomatchset-geomatchconstraint-type",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        },
+        "Value": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-geomatchset-geomatchconstraint.html#cfn-wafregional-geomatchset-geomatchconstraint-value",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::IPSet.IPSetDescriptor": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-ipset-ipsetdescriptor.html",
+      "Properties": {
+        "Type": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-ipset-ipsetdescriptor.html#cfn-wafregional-ipset-ipsetdescriptor-type",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        },
+        "Value": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-ipset-ipsetdescriptor.html#cfn-wafregional-ipset-ipsetdescriptor-value",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::RateBasedRule.Predicate": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-ratebasedrule-predicate.html",
+      "Properties": {
+        "DataId": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-ratebasedrule-predicate.html#cfn-wafregional-ratebasedrule-predicate-dataid",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        },
+        "Negated": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-ratebasedrule-predicate.html#cfn-wafregional-ratebasedrule-predicate-negated",
+          "PrimitiveType": "Boolean",
+          "Required": true,
+          "UpdateType": "Mutable"
+        },
+        "Type": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-ratebasedrule-predicate.html#cfn-wafregional-ratebasedrule-predicate-type",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::Rule.Predicate": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-rule-predicate.html",
+      "Properties": {
+        "DataId": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-rule-predicate.html#cfn-wafregional-rule-predicate-dataid",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        },
+        "Negated": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-rule-predicate.html#cfn-wafregional-rule-predicate-negated",
+          "PrimitiveType": "Boolean",
+          "Required": true,
+          "UpdateType": "Mutable"
+        },
+        "Type": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-rule-predicate.html#cfn-wafregional-rule-predicate-type",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::SizeConstraintSet.FieldToMatch": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-fieldtomatch.html",
+      "Properties": {
+        "Data": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-fieldtomatch.html#cfn-wafregional-sizeconstraintset-fieldtomatch-data",
+          "PrimitiveType": "String",
+          "Required": false,
+          "UpdateType": "Mutable"
+        },
+        "Type": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-fieldtomatch.html#cfn-wafregional-sizeconstraintset-fieldtomatch-type",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::SizeConstraintSet.SizeConstraint": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html",
+      "Properties": {
+        "ComparisonOperator": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-comparisonoperator",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        },
+        "FieldToMatch": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-fieldtomatch",
+          "Required": true,
+          "Type": "FieldToMatch",
+          "UpdateType": "Mutable"
+        },
+        "Size": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-size",
+          "PrimitiveType": "Integer",
+          "Required": true,
+          "UpdateType": "Mutable"
+        },
+        "TextTransformation": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-texttransformation",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::SqlInjectionMatchSet.FieldToMatch": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sqlinjectionmatchset-fieldtomatch.html",
+      "Properties": {
+        "Data": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sqlinjectionmatchset-fieldtomatch.html#cfn-wafregional-sqlinjectionmatchset-fieldtomatch-data",
+          "PrimitiveType": "String",
+          "Required": false,
+          "UpdateType": "Mutable"
+        },
+        "Type": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sqlinjectionmatchset-fieldtomatch.html#cfn-wafregional-sqlinjectionmatchset-fieldtomatch-type",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::SqlInjectionMatchSet.SqlInjectionMatchTuple": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple.html",
+      "Properties": {
+        "FieldToMatch": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple.html#cfn-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple-fieldtomatch",
+          "Required": true,
+          "Type": "FieldToMatch",
+          "UpdateType": "Mutable"
+        },
+        "TextTransformation": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple.html#cfn-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple-texttransformation",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::WebACL.Action": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-action.html",
+      "Properties": {
+        "Type": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-action.html#cfn-wafregional-webacl-action-type",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::WebACL.Rule": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-rule.html",
+      "Properties": {
+        "Action": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-rule.html#cfn-wafregional-webacl-rule-action",
+          "Required": true,
+          "Type": "Action",
+          "UpdateType": "Mutable"
+        },
+        "Priority": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-rule.html#cfn-wafregional-webacl-rule-priority",
+          "PrimitiveType": "Integer",
+          "Required": true,
+          "UpdateType": "Mutable"
+        },
+        "RuleId": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-rule.html#cfn-wafregional-webacl-rule-ruleid",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::XssMatchSet.FieldToMatch": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-xssmatchset-fieldtomatch.html",
+      "Properties": {
+        "Data": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-xssmatchset-fieldtomatch.html#cfn-wafregional-xssmatchset-fieldtomatch-data",
+          "PrimitiveType": "String",
+          "Required": false,
+          "UpdateType": "Mutable"
+        },
+        "Type": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-xssmatchset-fieldtomatch.html#cfn-wafregional-xssmatchset-fieldtomatch-type",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::XssMatchSet.XssMatchTuple": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-xssmatchset-xssmatchtuple.html",
+      "Properties": {
+        "FieldToMatch": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-xssmatchset-xssmatchtuple.html#cfn-wafregional-xssmatchset-xssmatchtuple-fieldtomatch",
+          "Required": true,
+          "Type": "FieldToMatch",
+          "UpdateType": "Mutable"
+        },
+        "TextTransformation": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-xssmatchset-xssmatchtuple.html#cfn-wafregional-xssmatchset-xssmatchtuple-texttransformation",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
     "AWS::WAFv2::RuleGroup.AndStatement": {
       "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-andstatement.html",
       "Properties": {
@@ -21991,7 +22292,7 @@
       }
     }
   },
-  "ResourceSpecificationVersion": "37.1.0",
+  "ResourceSpecificationVersion": "39.1.0",
   "ResourceTypes": {
     "AWS::ACMPCA::Certificate": {
       "Attributes": {
@@ -23428,6 +23729,12 @@
           "Required": false,
           "UpdateType": "Mutable"
         },
+        "Context": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-context",
+          "PrimitiveType": "String",
+          "Required": false,
+          "UpdateType": "Mutable"
+        },
         "Cooldown": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-cooldown",
           "PrimitiveType": "String",
@@ -24846,6 +25153,9 @@
     "AWS::CloudFront::Function": {
       "Attributes": {
         "FunctionARN": {
+          "PrimitiveType": "String"
+        },
+        "FunctionMetadata.FunctionARN": {
           "PrimitiveType": "String"
         },
         "Stage": {
@@ -26478,7 +26788,7 @@
           "Required": false,
           "UpdateType": "Mutable",
           "Value": {
-            "ValueType": "Ec2FleetExcessCapacityTerminationPolicy"
+            "ValueType": "AWS::EC2::EC2Fleet.ExcessCapacityTerminationPolicy"
           }
         },
         "LaunchTemplateConfigs": {
@@ -26531,7 +26841,7 @@
           "Required": false,
           "UpdateType": "Immutable",
           "Value": {
-            "ValueType": "Ec2FleetType"
+            "ValueType": "AWS::EC2::EC2Fleet.Type"
           }
         },
         "ValidFrom": {
@@ -27138,7 +27448,13 @@
         "AllocationId": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-natgateway.html#cfn-ec2-natgateway-allocationid",
           "PrimitiveType": "String",
-          "Required": true,
+          "Required": false,
+          "UpdateType": "Immutable"
+        },
+        "ConnectivityType": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-natgateway.html#cfn-ec2-natgateway-connectivitytype",
+          "PrimitiveType": "String",
+          "Required": false,
           "UpdateType": "Immutable"
         },
         "SubnetId": {
@@ -34128,12 +34444,6 @@
             "ValueType": "AWS::Lambda::Function.Handler"
           }
         },
-        "Id": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-id",
-          "PrimitiveType": "String",
-          "Required": false,
-          "UpdateType": "Mutable"
-        },
         "ImageConfig": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-imageconfig",
           "Required": false,
@@ -35119,6 +35429,13 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ram-resourceshare.html#cfn-ram-resourceshare-name",
           "PrimitiveType": "String",
           "Required": true,
+          "UpdateType": "Mutable"
+        },
+        "PermissionArns": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ram-resourceshare.html#cfn-ram-resourceshare-permissionarns",
+          "PrimitiveItemType": "String",
+          "Required": false,
+          "Type": "List",
           "UpdateType": "Mutable"
         },
         "Principals": {
@@ -37086,6 +37403,12 @@
           "Required": false,
           "UpdateType": "Mutable"
         },
+        "DeduplicationScope": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-deduplicationscope",
+          "PrimitiveType": "String",
+          "Required": false,
+          "UpdateType": "Mutable"
+        },
         "DelaySeconds": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-delayseconds",
           "PrimitiveType": "Integer",
@@ -37100,6 +37423,12 @@
           "PrimitiveType": "Boolean",
           "Required": false,
           "UpdateType": "Immutable"
+        },
+        "FifoThroughputLimit": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-fifothroughputlimit",
+          "PrimitiveType": "String",
+          "Required": false,
+          "UpdateType": "Mutable"
         },
         "KmsDataKeyReusePeriodSeconds": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-kmsdatakeyreuseperiodseconds",
@@ -37294,7 +37623,7 @@
         },
         "Parameters": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-parameters",
-          "ItemType": "ParameterValues",
+          "PrimitiveItemType": "Json",
           "Required": false,
           "Type": "Map",
           "UpdateType": "Mutable"
@@ -38686,6 +39015,239 @@
           "DuplicatesAllowed": false,
           "ItemType": "XssMatchTuple",
           "Required": true,
+          "Type": "List",
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::ByteMatchSet": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-bytematchset.html",
+      "Properties": {
+        "ByteMatchTuples": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-bytematchset.html#cfn-wafregional-bytematchset-bytematchtuples",
+          "ItemType": "ByteMatchTuple",
+          "Required": false,
+          "Type": "List",
+          "UpdateType": "Mutable"
+        },
+        "Name": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-bytematchset.html#cfn-wafregional-bytematchset-name",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::GeoMatchSet": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-geomatchset.html",
+      "Properties": {
+        "GeoMatchConstraints": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-geomatchset.html#cfn-wafregional-geomatchset-geomatchconstraints",
+          "ItemType": "GeoMatchConstraint",
+          "Required": false,
+          "Type": "List",
+          "UpdateType": "Mutable"
+        },
+        "Name": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-geomatchset.html#cfn-wafregional-geomatchset-name",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::IPSet": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ipset.html",
+      "Properties": {
+        "IPSetDescriptors": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ipset.html#cfn-wafregional-ipset-ipsetdescriptors",
+          "ItemType": "IPSetDescriptor",
+          "Required": false,
+          "Type": "List",
+          "UpdateType": "Mutable"
+        },
+        "Name": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ipset.html#cfn-wafregional-ipset-name",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::RateBasedRule": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ratebasedrule.html",
+      "Properties": {
+        "MatchPredicates": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ratebasedrule.html#cfn-wafregional-ratebasedrule-matchpredicates",
+          "ItemType": "Predicate",
+          "Required": false,
+          "Type": "List",
+          "UpdateType": "Mutable"
+        },
+        "MetricName": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ratebasedrule.html#cfn-wafregional-ratebasedrule-metricname",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        },
+        "Name": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ratebasedrule.html#cfn-wafregional-ratebasedrule-name",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        },
+        "RateKey": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ratebasedrule.html#cfn-wafregional-ratebasedrule-ratekey",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        },
+        "RateLimit": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ratebasedrule.html#cfn-wafregional-ratebasedrule-ratelimit",
+          "PrimitiveType": "Integer",
+          "Required": true,
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::RegexPatternSet": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-regexpatternset.html",
+      "Properties": {
+        "Name": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-regexpatternset.html#cfn-wafregional-regexpatternset-name",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        },
+        "RegexPatternStrings": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-regexpatternset.html#cfn-wafregional-regexpatternset-regexpatternstrings",
+          "PrimitiveItemType": "String",
+          "Required": true,
+          "Type": "List",
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::Rule": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html",
+      "Properties": {
+        "MetricName": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html#cfn-wafregional-rule-metricname",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        },
+        "Name": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html#cfn-wafregional-rule-name",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        },
+        "Predicates": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html#cfn-wafregional-rule-predicates",
+          "ItemType": "Predicate",
+          "Required": false,
+          "Type": "List",
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::SizeConstraintSet": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sizeconstraintset.html",
+      "Properties": {
+        "Name": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sizeconstraintset.html#cfn-wafregional-sizeconstraintset-name",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        },
+        "SizeConstraints": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sizeconstraintset.html#cfn-wafregional-sizeconstraintset-sizeconstraints",
+          "ItemType": "SizeConstraint",
+          "Required": false,
+          "Type": "List",
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::SqlInjectionMatchSet": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sqlinjectionmatchset.html",
+      "Properties": {
+        "Name": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sqlinjectionmatchset.html#cfn-wafregional-sqlinjectionmatchset-name",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        },
+        "SqlInjectionMatchTuples": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sqlinjectionmatchset.html#cfn-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuples",
+          "ItemType": "SqlInjectionMatchTuple",
+          "Required": false,
+          "Type": "List",
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::WebACL": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html",
+      "Properties": {
+        "DefaultAction": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html#cfn-wafregional-webacl-defaultaction",
+          "Required": true,
+          "Type": "Action",
+          "UpdateType": "Mutable"
+        },
+        "MetricName": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html#cfn-wafregional-webacl-metricname",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        },
+        "Name": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html#cfn-wafregional-webacl-name",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        },
+        "Rules": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html#cfn-wafregional-webacl-rules",
+          "ItemType": "Rule",
+          "Required": false,
+          "Type": "List",
+          "UpdateType": "Mutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::WebACLAssociation": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html",
+      "Properties": {
+        "ResourceArn": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html#cfn-wafregional-webaclassociation-resourcearn",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        },
+        "WebACLId": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html#cfn-wafregional-webaclassociation-webaclid",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        }
+      }
+    },
+    "AWS::WAFRegional::XssMatchSet": {
+      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-xssmatchset.html",
+      "Properties": {
+        "Name": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-xssmatchset.html#cfn-wafregional-xssmatchset-name",
+          "PrimitiveType": "String",
+          "Required": true,
+          "UpdateType": "Immutable"
+        },
+        "XssMatchTuples": {
+          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-xssmatchset.html#cfn-wafregional-xssmatchset-xssmatchtuples",
+          "ItemType": "XssMatchTuple",
+          "Required": false,
           "Type": "List",
           "UpdateType": "Mutable"
         }
@@ -40320,6 +40882,100 @@
         "OLD_IMAGE"
       ]
     },
+    "AWS::EC2::EC2Fleet.CapacityReservationOptionsRequest.UsageStrategy": {
+      "AllowedValues": [
+        "use-capacity-reservations-first"
+      ]
+    },
+    "AWS::EC2::EC2Fleet.ExcessCapacityTerminationPolicy": {
+      "AllowedValues": [
+        "termination",
+        "no-termination"
+      ]
+    },
+    "AWS::EC2::EC2Fleet.FleetLaunchTemplateSpecificationRequest.LaunchTemplateName": {
+      "AllowedPatternRegex": "[a-zA-Z0-9\\(\\)\\.\\-/_]+",
+      "StringMax": 128,
+      "StringMin": 3
+    },
+    "AWS::EC2::EC2Fleet.SpotOptionsRequest.AllocationStrategy": {
+      "AllowedValues": [
+        "lowestPrice",
+        "diversified",
+        "capacityOptimized"
+      ]
+    },
+    "AWS::EC2::EC2Fleet.SpotOptionsRequest.InstanceInterruptionBehavior": {
+      "AllowedValues": [
+        "hibernate",
+        "stop",
+        "terminate"
+      ]
+    },
+    "AWS::EC2::EC2Fleet.TagSpecification.ResourceType": {
+      "AllowedValues": [
+        "client-vpn-endpoint",
+        "customer-gateway",
+        "dedicated-host",
+        "dhcp-options",
+        "egress-only-internet-gateway",
+        "elastic-gpu",
+        "elastic-ip",
+        "export-image-task",
+        "export-instance-task",
+        "fleet",
+        "fpga-image",
+        "host-reservation",
+        "image",
+        "import-image-task",
+        "import-snapshot-task",
+        "instance",
+        "internet-gateway",
+        "key-pair",
+        "launch-template",
+        "local-gateway-route-table-vpc-association",
+        "natgateway",
+        "network-acl",
+        "network-insights-analysis",
+        "network-insights-path",
+        "network-interface",
+        "placement-group",
+        "reserved-instances",
+        "route-table",
+        "security-group",
+        "snapshot",
+        "spot-fleet-request",
+        "spot-instances-request",
+        "subnet",
+        "traffic-mirror-filter",
+        "traffic-mirror-session",
+        "traffic-mirror-target",
+        "transit-gateway",
+        "transit-gateway-attachment",
+        "transit-gateway-connect-peer",
+        "transit-gateway-multicast-domain",
+        "transit-gateway-route-table",
+        "volume",
+        "vpc",
+        "vpc-flow-log",
+        "vpc-peering-connection",
+        "vpn-connection",
+        "vpn-gateway"
+      ]
+    },
+    "AWS::EC2::EC2Fleet.TargetCapacitySpecificationRequest.DefaultTargetCapacityType": {
+      "AllowedValues": [
+        "on-demand",
+        "spot"
+      ]
+    },
+    "AWS::EC2::EC2Fleet.Type": {
+      "AllowedValues": [
+        "maintain",
+        "request",
+        "instant"
+      ]
+    },
     "AWS::EC2::EIP.AllocationId": {
       "GetAtt": {
         "AWS::EC2::EIP": "AllocationId"
@@ -40409,6 +41065,114 @@
           "SecurityGroupIds"
         ]
       }
+    },
+    "AWS::EC2::SpotFleet.EbsBlockDevice.VolumeType": {
+      "AllowedValues": [
+        "gp2",
+        "gp3",
+        "io1",
+        "io2",
+        "sc1",
+        "st1",
+        "standard"
+      ]
+    },
+    "AWS::EC2::SpotFleet.FleetLaunchTemplateSpecification.LaunchTemplateName": {
+      "AllowedPatternRegex": "[a-zA-Z0-9\\(\\)\\.\\-/_]+",
+      "StringMax": 128,
+      "StringMin": 3
+    },
+    "AWS::EC2::SpotFleet.SpotCapacityRebalance.ReplacementStrategy": {
+      "AllowedValues": [
+        "launch"
+      ]
+    },
+    "AWS::EC2::SpotFleet.SpotFleetRequestConfigData.AllocationStrategy": {
+      "AllowedValues": [
+        "capacityOptimized",
+        "capacityOptimizedPrioritized",
+        "diversified",
+        "lowestPrice"
+      ]
+    },
+    "AWS::EC2::SpotFleet.SpotFleetRequestConfigData.ExcessCapacityTerminationPolicy": {
+      "AllowedValues": [
+        "Default",
+        "NoTermination",
+        "default",
+        "noTermination"
+      ]
+    },
+    "AWS::EC2::SpotFleet.SpotFleetRequestConfigData.InstanceInterruptionBehavior": {
+      "AllowedValues": [
+        "hibernate",
+        "stop",
+        "terminate"
+      ]
+    },
+    "AWS::EC2::SpotFleet.SpotFleetRequestConfigData.Type": {
+      "AllowedValues": [
+        "maintain",
+        "request"
+      ]
+    },
+    "AWS::EC2::SpotFleet.SpotFleetTagSpecification.ResourceType": {
+      "AllowedValues": [
+        "client-vpn-endpoint",
+        "customer-gateway",
+        "dedicated-host",
+        "dhcp-options",
+        "egress-only-internet-gateway",
+        "elastic-gpu",
+        "elastic-ip",
+        "export-image-task",
+        "export-instance-task",
+        "fleet",
+        "fpga-image",
+        "host-reservation",
+        "image",
+        "import-image-task",
+        "import-snapshot-task",
+        "instance",
+        "internet-gateway",
+        "key-pair",
+        "launch-template",
+        "local-gateway-route-table-vpc-association",
+        "natgateway",
+        "network-acl",
+        "network-insights-analysis",
+        "network-insights-path",
+        "network-interface",
+        "placement-group",
+        "reserved-instances",
+        "route-table",
+        "security-group",
+        "snapshot",
+        "spot-fleet-request",
+        "spot-instances-request",
+        "subnet",
+        "traffic-mirror-filter",
+        "traffic-mirror-session",
+        "traffic-mirror-target",
+        "transit-gateway",
+        "transit-gateway-attachment",
+        "transit-gateway-connect-peer",
+        "transit-gateway-multicast-domain",
+        "transit-gateway-route-table",
+        "volume",
+        "vpc",
+        "vpc-flow-log",
+        "vpc-peering-connection",
+        "vpn-connection",
+        "vpn-gateway"
+      ]
+    },
+    "AWS::EC2::SpotFleet.SpotPlacement.Tenancy": {
+      "AllowedValues": [
+        "dedicated",
+        "default",
+        "host"
+      ]
     },
     "AWS::EC2::VPC.Id": {
       "GetAtt": {
@@ -42529,91 +43293,7 @@
     },
     "AppStreamInstanceType": {},
     "AvailabilityZone": {
-      "AllowedValues": [
-        "af-south-1a",
-        "af-south-1b",
-        "af-south-1c",
-        "ap-east-1a",
-        "ap-east-1b",
-        "ap-east-1c",
-        "ap-northeast-1a",
-        "ap-northeast-1b",
-        "ap-northeast-1c",
-        "ap-northeast-1d",
-        "ap-northeast-2a",
-        "ap-northeast-2b",
-        "ap-northeast-2c",
-        "ap-northeast-2d",
-        "ap-northeast-3a",
-        "ap-south-1a",
-        "ap-south-1b",
-        "ap-south-1c",
-        "ap-southeast-1a",
-        "ap-southeast-1b",
-        "ap-southeast-1c",
-        "ap-southeast-2a",
-        "ap-southeast-2b",
-        "ap-southeast-2c",
-        "ca-central-1a",
-        "ca-central-1b",
-        "ca-central-1d",
-        "cn-north-1a",
-        "cn-north-1b",
-        "cn-northwest-1a",
-        "cn-northwest-1b",
-        "cn-northwest-1c",
-        "eu-central-1a",
-        "eu-central-1b",
-        "eu-central-1c",
-        "eu-north-1a",
-        "eu-north-1b",
-        "eu-north-1c",
-        "eu-south-1a",
-        "eu-south-1b",
-        "eu-south-1c",
-        "eu-west-1a",
-        "eu-west-1b",
-        "eu-west-1c",
-        "eu-west-2a",
-        "eu-west-2b",
-        "eu-west-2c",
-        "eu-west-3a",
-        "eu-west-3b",
-        "eu-west-3c",
-        "me-south-1a",
-        "me-south-1b",
-        "me-south-1c",
-        "sa-east-1a",
-        "sa-east-1b",
-        "sa-east-1c",
-        "us-east-1a",
-        "us-east-1b",
-        "us-east-1c",
-        "us-east-1d",
-        "us-east-1e",
-        "us-east-1f",
-        "us-east-1-bos-1a",
-        "us-east-1-iah-1a",
-        "us-east-1-mia-1a",
-        "us-east-2a",
-        "us-east-2b",
-        "us-east-2c",
-        "us-gov-east-1a",
-        "us-gov-east-1b",
-        "us-gov-east-1c",
-        "us-gov-west-1a",
-        "us-gov-west-1b",
-        "us-gov-west-1c",
-        "us-west-1a",
-        "us-west-1b",
-        "us-west-1c",
-        "us-west-2a",
-        "us-west-2b",
-        "us-west-2c",
-        "us-west-2d",
-        "us-west-2-lax-1a",
-        "us-west-2-lax-1b"
-      ],
+      "AllowedPatternRegex": "[a-z0-9-]+",
       "GetAtt": {
         "AWS::EC2::Instance": "AvailabilityZone",
         "AWS::EC2::Subnet": "AvailabilityZone",
@@ -42627,92 +43307,7 @@
       }
     },
     "AvailabilityZoneWithAll": {
-      "AllowedValues": [
-        "all",
-        "af-south-1a",
-        "af-south-1b",
-        "af-south-1c",
-        "ap-east-1a",
-        "ap-east-1b",
-        "ap-east-1c",
-        "ap-northeast-1a",
-        "ap-northeast-1b",
-        "ap-northeast-1c",
-        "ap-northeast-1d",
-        "ap-northeast-2a",
-        "ap-northeast-2b",
-        "ap-northeast-2c",
-        "ap-northeast-2d",
-        "ap-northeast-3a",
-        "ap-south-1a",
-        "ap-south-1b",
-        "ap-south-1c",
-        "ap-southeast-1a",
-        "ap-southeast-1b",
-        "ap-southeast-1c",
-        "ap-southeast-2a",
-        "ap-southeast-2b",
-        "ap-southeast-2c",
-        "ca-central-1a",
-        "ca-central-1b",
-        "ca-central-1d",
-        "cn-north-1a",
-        "cn-north-1b",
-        "cn-northwest-1a",
-        "cn-northwest-1b",
-        "cn-northwest-1c",
-        "eu-central-1a",
-        "eu-central-1b",
-        "eu-central-1c",
-        "eu-north-1a",
-        "eu-north-1b",
-        "eu-north-1c",
-        "eu-south-1a",
-        "eu-south-1b",
-        "eu-south-1c",
-        "eu-west-1a",
-        "eu-west-1b",
-        "eu-west-1c",
-        "eu-west-2a",
-        "eu-west-2b",
-        "eu-west-2c",
-        "eu-west-3a",
-        "eu-west-3b",
-        "eu-west-3c",
-        "me-south-1a",
-        "me-south-1b",
-        "me-south-1c",
-        "sa-east-1a",
-        "sa-east-1b",
-        "sa-east-1c",
-        "us-east-1a",
-        "us-east-1b",
-        "us-east-1c",
-        "us-east-1d",
-        "us-east-1e",
-        "us-east-1f",
-        "us-east-1-bos-1a",
-        "us-east-1-iah-1a",
-        "us-east-1-mia-1a",
-        "us-east-2a",
-        "us-east-2b",
-        "us-east-2c",
-        "us-gov-east-1a",
-        "us-gov-east-1b",
-        "us-gov-east-1c",
-        "us-gov-west-1a",
-        "us-gov-west-1b",
-        "us-gov-west-1c",
-        "us-west-1a",
-        "us-west-1b",
-        "us-west-1c",
-        "us-west-2a",
-        "us-west-2b",
-        "us-west-2c",
-        "us-west-2d",
-        "us-west-2-lax-1a",
-        "us-west-2-lax-1b"
-      ],
+      "AllowedPatternRegex": "[a-z0-9-]+",
       "GetAtt": {
         "AWS::EC2::Instance": "AvailabilityZone",
         "AWS::EC2::Subnet": "AvailabilityZone",
@@ -43014,44 +43609,10 @@
         "vpc"
       ]
     },
-    "Ec2FleetDefaultTargetCapacityType": {
-      "AllowedValues": [
-        "on-demand",
-        "spot"
-      ]
-    },
-    "Ec2FleetExcessCapacityTerminationPolicy": {
-      "AllowedValues": [
-        "no-termination",
-        "termination"
-      ]
-    },
     "Ec2FleetOnDemandAllocationStrategy": {
       "AllowedValues": [
         "lowest-price",
         "prioritized"
-      ]
-    },
-    "Ec2FleetSpotAllocationStrategy": {
-      "AllowedValues": [
-        "capacityOptimized",
-        "capacityOptimizedPrioritized",
-        "diversified",
-        "lowestPrice"
-      ]
-    },
-    "Ec2FleetSpotInterruptionBehavior": {
-      "AllowedValues": [
-        "hibernate",
-        "stop",
-        "terminate"
-      ]
-    },
-    "Ec2FleetType": {
-      "AllowedValues": [
-        "instant",
-        "maintain",
-        "request"
       ]
     },
     "Ec2HostAutoPlacement": {
@@ -43180,6 +43741,9 @@
         "t3.nano",
         "t3.small",
         "t3.xlarge",
+        "u-12tb1.metal",
+        "u-6tb1.metal",
+        "u-9tb1.metal",
         "x1.16xlarge",
         "x1.32xlarge",
         "x1e.16xlarge",
@@ -43768,26 +44332,6 @@
         "lambda",
         "sms",
         "sqs"
-      ]
-    },
-    "SpotFleetExcessCapacityTerminationPolicy": {
-      "AllowedValues": [
-        "default",
-        "noTermination"
-      ]
-    },
-    "SpotFleetInstanceInterruptionBehavior": {
-      "AllowedValues": [
-        "hibernate",
-        "stop",
-        "terminate"
-      ]
-    },
-    "SpotFleetType": {
-      "AllowedValues": [
-        "instant",
-        "maintain",
-        "request"
       ]
     },
     "SsmDocumentName": {
