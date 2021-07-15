@@ -1,6 +1,18 @@
 [
   {
     "op": "remove",
+    "path": "/ResourceTypes/AWS::CodeBuild::Project"
+  },
+  {
+    "op": "remove",
+    "path": "/ResourceTypes/AWS::CodeBuild::ReportGroup"
+  },
+  {
+    "op": "remove",
+    "path": "/ResourceTypes/AWS::CodeBuild::SourceCredential"
+  },
+  {
+    "op": "remove",
     "path": "/ResourceTypes/AWS::CodePipeline::CustomActionType"
   },
   {
@@ -10,14 +22,6 @@
   {
     "op": "remove",
     "path": "/ResourceTypes/AWS::DataPipeline::Pipeline"
-  },
-  {
-    "op": "remove",
-    "path": "/ResourceTypes/AWS::DirectoryService::MicrosoftAD"
-  },
-  {
-    "op": "remove",
-    "path": "/ResourceTypes/AWS::DirectoryService::SimpleAD"
   },
   {
     "op": "remove",
@@ -90,6 +94,94 @@
   {
     "op": "remove",
     "path": "/ResourceTypes/AWS::WorkSpaces::Workspace"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.Artifacts"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.BatchRestrictions"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.BuildStatusConfig"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.CloudWatchLogsConfig"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.Environment"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.EnvironmentVariable"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.FilterGroup"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.GitSubmodulesConfig"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.LogsConfig"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.ProjectBuildBatchConfig"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.ProjectCache"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.ProjectFileSystemLocation"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.ProjectSourceVersion"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.ProjectTriggers"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.RegistryCredential"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.S3LogsConfig"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.Source"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.SourceAuth"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.VpcConfig"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.WebhookFilter"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::ReportGroup.ReportExportConfig"
+  },
+  {
+    "op": "remove",
+    "path": "/PropertyTypes/AWS::CodeBuild::ReportGroup.S3ReportExportConfig"
   },
   {
     "op": "remove",
@@ -166,14 +258,6 @@
   {
     "op": "remove",
     "path": "/PropertyTypes/AWS::DataPipeline::Pipeline.PipelineTag"
-  },
-  {
-    "op": "remove",
-    "path": "/PropertyTypes/AWS::DirectoryService::MicrosoftAD.VpcSettings"
-  },
-  {
-    "op": "remove",
-    "path": "/PropertyTypes/AWS::DirectoryService::SimpleAD.VpcSettings"
   },
   {
     "op": "remove",
